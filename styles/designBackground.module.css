@@ -1,0 +1,105 @@
+/*:root {
+    --color1: #050A0D;
+    --color2: #64818C;
+    --color3: #95B8BF;
+    --color4: #73503C;
+    --color5: #A67F68;
+}   */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card_single {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    color: #95B8BF;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.escurecer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #050a0da2;
+}
+
+.card_single h1 {
+    margin-top: 250px;
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-family: 'Castoro Titling', cursive;
+    color: #95B8BF;
+    line-height: 35px;
+    text-shadow: 0px 0px 5px #ffffff86;
+    z-index: 1;
+}
+
+.card_single p {
+    color: #95B8BF;
+    margin-bottom: 35px;
+    font-size: 25px;
+    text-shadow: 3px 3px 9px #050a0d6e;
+}
+
+.card_single button {
+    position: relative;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5em 1em;
+    display: inline-block;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #73503C;
+    width: 50%;
+   }
+   
+   .card_single button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+   }
+   
+   .card_single button::after {
+    color: #ffffff;
+    background-color: #73503C;
+   }
+
+@media only screen and (max-width: 950px) {
+    .card_single {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .card_single h1 {
+        margin-top: 120px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-family: 'Castoro Titling', cursive;
+        line-height: 30px;
+    }
+
+    .card_single p {
+        color: #95B8BF;
+        margin-bottom: 25px;
+        font-size: 15px;
+        text-shadow: 3px 3px 9px #050a0d6e;
+    }
+
+    .card_single button {
+        font-size: 13px;
+    }
+}

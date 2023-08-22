@@ -1,0 +1,36 @@
+/*:root {
+    --color1: #050A0D;
+    --color2: #64818C;
+    --color3: #95B8BF;
+    --color4: #73503C;
+    --color5: #A67F68;
+}*/
+
+
+.container_text {
+    padding: 0 8%;
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 70px;
+}
+
+.container_text h1 {
+    color: #73503C;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Castoro Titling', cursive;
+    text-shadow: 0px 0px 5px #050a0d59;
+}
+
+.container_text h2 {
+    font-weight: 300;
+    font-size: 18px;
+    color: #A67F68;
+}
+
+.container_card {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

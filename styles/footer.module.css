@@ -1,0 +1,148 @@
+/*:root {
+    --color1: #050A0D;
+    --color2: #64818C;
+    --color3: #95B8BF;
+    --color4: #73503C;
+    --color5: #A67F68;
+}*/
+
+.container {
+    width: 100%;
+    padding: 40px 25px;
+    background-color: #050A0D;
+    position: relative;
+    margin-top: 200px;
+}
+
+.btn_redes {
+    display: flex;
+    list-style: none;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+  }
+  
+  .btn_redes .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .btn_redes .icon:hover span,
+  .btn_redes .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn_redes .whatsApp:hover,
+  .btn_redes .whatsApp:hover .tooltip,
+  .btn_redes .whatsApp:hover .tooltip::before {
+    background: #25D366;
+    color: #fff;
+  }
+  
+  .btn_redes .email:hover,
+  .btn_redes .email:hover .tooltip,
+  .btn_redes .email:hover .tooltip::before {
+    background: #c71610;
+    color: #fff;
+  }
+  
+  .btn_redes .instagram:hover,
+  .btn_redes .instagram:hover .tooltip,
+  .btn_redes .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+
+  .redesocial {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+
+.text_footer {
+    color: #95B8BF;
+    width: 95%;
+    max-width: 800px;
+}
+
+.text_footer p {
+  margin-bottom: 20px;
+}
+
+.text_footer h3 {
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.pagamentos {
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+  font-size: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.pagamentos * {
+  margin: 0 5px;
+}
+
+.selos {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.envios {
+  margin-top: 30px;
+  color: white;
+  text-decoration: underline;
+}
+.envios * {
+  display: inline-block;
+}

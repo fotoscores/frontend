@@ -1,0 +1,212 @@
+/*:root {
+    --color1: #050A0D;
+    --color2: #64818C;
+    --color3: #95B8BF;
+    --color4: #73503C;
+    --color5: #A67F68;
+}   */
+
+.container {
+    padding-top: 120px;
+}
+
+.btn_redes {
+    display: flex;
+    list-style: none;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 60px;
+  }
+  
+  .btn_redes .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .btn_redes .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .btn_redes .icon:hover span,
+  .btn_redes .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn_redes .whatsApp:hover,
+  .btn_redes .whatsApp:hover .tooltip,
+  .btn_redes .whatsApp:hover .tooltip::before {
+    background: #25D366;
+    color: #fff;
+  }
+  
+  .btn_redes .email:hover,
+  .btn_redes .email:hover .tooltip,
+  .btn_redes .email:hover .tooltip::before {
+    background: #c71610;
+    color: #fff;
+  }
+  
+  .btn_redes .instagram:hover,
+  .btn_redes .instagram:hover .tooltip,
+  .btn_redes .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+
+  .content_1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page_1_titles {
+    width: 50%;
+    padding-left: 40px;
+    color: #73503C;
+  }
+
+  .page_1_titles h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Castoro Titling', cursive;
+  }
+
+  .page_1_titles h2 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 25px;
+  }
+
+  .page_1_titles p {
+    color: #050a0dcc;
+    margin-top: 10px;
+  }
+
+  .imagens_celular {
+    width: 50%;
+  }
+
+  .container_description {
+    padding: 40px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .container_description h3 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 25px;
+    color: #73503C;
+    margin-bottom: 20px;
+  }
+
+  .container_description p {
+    color: #050a0dcc;
+    text-align: justify;
+  }
+
+  .img_description {
+    width: 90%;
+    max-width: 450px;
+    height: 220px;
+    margin: auto;
+    background-color: darkgrey;
+    margin-top: 25px;
+}
+
+.agradecimento {
+    text-align: center;
+}
+
+  @media only screen and (max-width: 950px) {
+    .content_1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page_1_titles {
+        width: 100%;
+        color: #73503C;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .imagens_celular {
+        width: 85%;
+        margin: auto;
+      }
+
+      .btn_redes {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        height: 120px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 60px;
+      }
+
+      .container_description {
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+      }
+
+      .container_description p {
+        color: #050a0dcc;
+        text-align: center;
+      }
+
+      .page_1_titles h1 {
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: 'Castoro Titling', cursive;
+      }
+
+      .page_1_titles h2 {
+        font-family: 'Castoro Titling', cursive;
+        font-size: 20px;
+      }
+  }

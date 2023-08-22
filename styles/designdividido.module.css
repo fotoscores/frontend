@@ -1,0 +1,104 @@
+/*:root {
+    --color1: #050A0D;
+    --color2: #64818C;
+    --color3: #95B8BF;
+    --color4: #73503C;
+    --color5: #A67F68;
+}*/
+
+.container {
+    background-color: rgba(189, 189, 189, 0.527);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.card_single {
+    width: 50%;
+    text-align: center;
+}
+
+.card_single:first-child {
+    background-image: url(/6X7A8398.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_single:last-child {
+    background-color: #73503C;
+    height: max-content;
+    padding: 30px 0;
+}
+
+.card_single p {
+    color: #64818C;
+    margin-bottom: 35px;
+    font-size: 25px;;
+    text-shadow: 3px 3px 9px #050a0d6e;
+}
+
+.card_single button {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5em 1em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #050A0D;
+    background-color: #95B8BF;
+    width: 70%;
+    max-width: 270px;
+   }
+   
+   .card_single button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+   }
+   
+   .card_single button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .card_single button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .card_single button::after {
+    background-color: #95B8BF;
+   }
+
+@media only screen and (max-width: 950px) {
+    .card_single {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .card_single:last-child {
+        background-color: #73503C;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .card_single h1 {
+        margin-top: 120px;
+        margin-bottom: 15px;
+        font-size: 35px;
+        font-family: 'Castoro Titling', cursive;
+        line-height: 30px;
+    }
+}

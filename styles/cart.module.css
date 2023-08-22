@@ -1,0 +1,14 @@
+.image_f {
+    width: 85%;
+    aspect-ratio: 1/1;
+    max-width: 700px;
+    box-shadow: 0px 0px 100px white;
+}
+
+.c_image {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0px 0px 9px black;
+    margin-bottom: 15px;
+}
